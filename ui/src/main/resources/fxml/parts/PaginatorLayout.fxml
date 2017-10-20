@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane stylesheets="@../../styles/paginator-layout.css" VBox.vgrow="NEVER" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="info.tgeorge.asf.ui.controller.parts.PaginatorController">
+    <right>
+        <HBox BorderPane.alignment="CENTER">
+            <children>
+                <AnchorPane HBox.hgrow="NEVER">
+                    <children>
+                        <JFXButton prefHeight="46.0" prefWidth="29.0" styleClass="jfx-btn-prev-page" text="&lt;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                    </children>
+                </AnchorPane>
+                <AnchorPane HBox.hgrow="ALWAYS">
+                    <HBox.margin>
+                        <Insets left="2.0" right="2.0" />
+                    </HBox.margin>
+                    <children>
+                        <HBox fx:id="hBoxBtnPageNumber" prefHeight="46.0" prefWidth="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                    </children>
+                </AnchorPane>
+                <AnchorPane HBox.hgrow="NEVER">
+                    <children>
+                        <JFXButton prefHeight="46.0" prefWidth="29.0" styleClass="jfx-btn-next-page" text="&gt;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                    </children>
+                </AnchorPane>
+            </children>
+            <BorderPane.margin>
+                <Insets />
+            </BorderPane.margin>
+        </HBox>
+    </right>
+    <left>
+        <HBox alignment="CENTER_LEFT" BorderPane.alignment="CENTER_LEFT">
+            <children>
+                <Label prefHeight="16.0" prefWidth="106.0" text="Items per page" />
+                <JFXComboBox fx:id="cbItemsPerPage" prefHeight="26.0" prefWidth="106.0" promptText="5">
+                    <HBox.margin>
+                        <Insets left="10.0" />
+                    </HBox.margin>
+                </JFXComboBox>
+            </children>
+            <BorderPane.margin>
+                <Insets />
+            </BorderPane.margin>
+        </HBox>
+    </left>
+    <center>
+        <Region prefHeight="46.0" prefWidth="347.0" BorderPane.alignment="CENTER" />
+    </center>
+</BorderPane>

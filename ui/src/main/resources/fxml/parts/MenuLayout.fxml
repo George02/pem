@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+<HBox maxHeight="40.0" minHeight="40.0" prefHeight="40.0" styleClass="hb-main" stylesheets="@../../styles/main-menu-layout.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="info.tgeorge.asf.ui.controller.parts.MenuController">
+    <children>
+        <JFXButton fx:id="jBtnDashboard" prefHeight="40.0" prefWidth="147.0" styleClass="jfx-btn-menu-item" text="Panou principal">
+            <HBox.margin>
+                <Insets />
+            </HBox.margin>
+        </JFXButton>
+        <Pane prefWidth="200.0" HBox.hgrow="ALWAYS" />
+        <JFXButton fx:id="jBtnProducts" layoutX="10.0" layoutY="10.0" prefHeight="40.0" styleClass="jfx-btn-menu-item" text="Produse">
+            <HBox.margin>
+                <Insets />
+            </HBox.margin>
+        </JFXButton>
+        <JFXButton fx:id="jBtnProductTypes" layoutX="72.0" layoutY="10.0" prefHeight="40.0" styleClass="jfx-btn-menu-item" text="Tipuri de produse">
+            <HBox.margin>
+                <Insets left="2.0" />
+            </HBox.margin>
+        </JFXButton>
+    </children>
+</HBox>

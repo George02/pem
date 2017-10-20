@@ -1,0 +1,6 @@
+#surefire
+#Thu Oct 19 18:48:52 EEST 2017
+maven.ext.class.path=/opt/netbeans-8.2/java/maven-nblib/netbeans-eventspy.jar
+user.dir=/home/george/NetBeansProjects/ProductEntityManagerCommon
+localRepository=/home/george/.m2/repository
+basedir=/home/george/NetBeansProjects/ProductEntityManagerCommon

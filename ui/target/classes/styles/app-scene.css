@@ -1,0 +1,15 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.ap-main {
+    /*    -fx-background-color: blue;*/
+}
+
+.sp-main {
+    -fx-background-color: rgb(255,255,255);
+}
+
+.sp-menu {
+    -fx-background-color: rgb(255,255,255);
+}

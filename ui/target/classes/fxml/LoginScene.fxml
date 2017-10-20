@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="apMain" styleClass="ap-main" stylesheets="@../styles/login-scene.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="info.tgeorge.asf.ui.controller.LoginSceneController">
+   <children>
+      <StackPane layoutX="200.0" layoutY="110.0" prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane maxHeight="380.0" maxWidth="400.0" minHeight="380.0" minWidth="400.0" prefHeight="380.0" prefWidth="400.0" styleClass="ap-login" StackPane.alignment="TOP_CENTER">
+               <children>
+                  <BorderPane prefHeight="16.0" prefWidth="36.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <top>
+                        <Label styleClass="bp-top-label" text="Product Entity Manager" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="10.0" top="10.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </top>
+                     <center>
+                        <VBox prefHeight="200.0" prefWidth="100.0" styleClass="bp-center-vbox" BorderPane.alignment="CENTER">
+                           <children>
+                              <Label alignment="CENTER" text="Logheaza-te pentru a putea incepe sesiunea de lucru" textAlignment="CENTER" wrapText="true">
+                                 <padding>
+                                    <Insets left="20.0" right="20.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <BorderPane>
+                                 <center>
+                                    <JFXTextField fx:id="jtfUsername" text="Username" BorderPane.alignment="CENTER">
+                                       <BorderPane.margin>
+                                          <Insets left="20.0" right="20.0" />
+                                       </BorderPane.margin>
+                                    </JFXTextField>
+                                 </center>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </BorderPane>
+                              <BorderPane layoutX="10.0" layoutY="10.0">
+                                 <center>
+                                    <JFXTextField fx:id="jtfPassword" text="Password" BorderPane.alignment="CENTER">
+                                       <BorderPane.margin>
+                                          <Insets left="20.0" right="20.0" top="20.0" />
+                                       </BorderPane.margin>
+                                    </JFXTextField>
+                                 </center>
+                              </BorderPane>
+                              <BorderPane>
+                                 <right>
+                                    <HBox BorderPane.alignment="CENTER">
+                                       <children>
+                                          <AnchorPane HBox.hgrow="ALWAYS">
+                                             <children>
+                                                <Label prefHeight="28.0" prefWidth="76.0" text="Login in ..." visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                   <padding>
+                                                      <Insets left="8.0" />
+                                                   </padding>
+                                                </Label>
+                                             </children>
+                                          </AnchorPane>
+                                          <JFXButton fx:id="jbtnLogin" buttonType="RAISED" ripplerFill="#ee0606" styleClass="jbtn-login" text="Login">
+                                             <HBox.margin>
+                                                <Insets left="20.0" />
+                                             </HBox.margin>
+                                          </JFXButton>
+                                       </children>
+                                    </HBox>
+                                 </right>
+                                 <VBox.margin>
+                                    <Insets top="40.0" />
+                                 </VBox.margin>
+                                 <left>
+                                    <HBox BorderPane.alignment="CENTER">
+                                       <children>
+                                          <JFXButton fx:id="jbtnRo" text="RO">
+                                             <styleClass>
+                                                <String fx:value="jbtn-lang" />
+                                                <String fx:value="jbtn-lang-active" />
+                                             </styleClass>
+                                          </JFXButton>
+                                          <JFXButton fx:id="jbtnEn" styleClass="jbtn-lang" text="EN" />
+                                       </children>
+                                    </HBox>
+                                 </left>
+                                 <padding>
+                                    <Insets left="20.0" right="20.0" />
+                                 </padding>
+                              </BorderPane>
+                           </children>
+                           <BorderPane.margin>
+                              <Insets top="20.0" />
+                           </BorderPane.margin>
+                           <padding>
+                              <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
+                           </padding>
+                        </VBox>
+                     </center>
+                     <bottom>
+                        <Label fx:id="lblVersion" alignment="CENTER_RIGHT" text="Versiunea 0.1" BorderPane.alignment="CENTER_RIGHT">
+                           <BorderPane.margin>
+                              <Insets top="10.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </bottom>
+                  </BorderPane>
+               </children>
+               <StackPane.margin>
+                  <Insets top="100.0" />
+               </StackPane.margin>
+            </AnchorPane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>
